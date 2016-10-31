@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-
+//Escte componente demuestra el event binding nativo
 @Component({
   selector: 'app-hello-world',
   template:
   `<button class="btn btn-primary" (click)="OnClick()">Clickeame!!</button>
   <h1>{{clickMessage}}</h1>
   <h3>Escribe algo:</h3>
-  <input type="text" (keypress)="onKey($event)"><br>
-  <span style="font-weight:bold;">{{values}}</span>`,
+  <input type="text" (keyup)="onKey($event)"><br>
+  <p>{{values}}<p>
+  `
 })
-export class HelloWorldComponent implements OnInit {
 
+export class HelloWorldComponent implements OnInit {
+  num:string;
   clickMessage:string;
   values:string;
-
   constructor(){
   	this.clickMessage='';
   	this.values='';
@@ -27,7 +28,7 @@ export class HelloWorldComponent implements OnInit {
   }
 
   onKey(event:any){
-  	this.values+=event.target.value+'|';
+  	this.values=event.target.value;
   }
 
 }

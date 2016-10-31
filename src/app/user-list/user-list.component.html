@@ -1,6 +1,13 @@
-<!-- <h2>(User-list-component)Uso de directiva ngFor</h2> 
-<h3>Asistentes:</h3>-->
+<h2>(User-list-component)Uso de directiva ngFor y ngIf</h2> 
+<h3>Array names:</h3>
 <ul>
-		<app-user-item *ngFor="let indname of names" [name]="indname"></app-user-item><!--Nota: names contiene los elementos del componente user-list-component. [name] apunta hacia el string del componente user-list-component, el cual, ese string esta preparado para que reciba un elemento del array de user-list.-->
-		<!-- <li *ngFor="let name of names">Profr. {{name}}</li>  -->
+	<li *ngFor="let name of names" (click)="enviarnom(name)">Profr. {{name}}</li>
 </ul>
+
+
+
+<button class="btn btn-default" (click)="hide()">Ocultar</button>
+
+<div *ngIf="flag">
+	<h2>{{nomb}}</h2>
+</div>

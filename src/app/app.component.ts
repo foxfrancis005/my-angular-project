@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hola mundooooo!!!!!!!';
   cadena='Cadena declarada en AppComponent';
+  clickear(){
+  	alert("Se ha accedido a la función clickear() dentro de app-component por medio de un evento custom");
+  }
 }
