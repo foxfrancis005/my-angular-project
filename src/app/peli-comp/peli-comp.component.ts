@@ -24,7 +24,8 @@ export class PeliCompComponent implements OnInit {
   }
 
   validar(texto){
-  	alert(this.validService.validarNum(texto));
+  	console.log(this.validService.validarNum(texto));
+    this.flag=true;
   }
   
   ngOnInit() {
