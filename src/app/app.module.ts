@@ -13,6 +13,7 @@ import { SwitchDirComponent } from './switch-dir/switch-dir.component';
 import { AttrDirComponent } from './attr-dir/attr-dir.component';
 import { PeliCompComponent } from './peli-comp/peli-comp.component';
 import {PeliculasService} from './peliculas.service';
+import { InjectComponent } from './inject/inject.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {PeliculasService} from './peliculas.service';
     EvtCustomComponent,
     SwitchDirComponent,
     AttrDirComponent,
-    PeliCompComponent
+    PeliCompComponent,
+    InjectComponent
   ],
   imports: [
     BrowserModule,
