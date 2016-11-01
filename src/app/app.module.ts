@@ -33,7 +33,7 @@ import { InjectComponent } from './inject/inject.component';
     FormsModule,
     HttpModule
   ],
-  providers: [PeliculasService],
+  providers: [PeliculasService]
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+//Este componente recibe un valor del input-in-view (Proprty binding)
 @Component({
   selector: 'app-user-item',
   templateUrl: './user-item.component.html',
