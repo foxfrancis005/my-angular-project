@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Hero} from '../hero';
-
+//Este componente muestra un ejemplo de formulario haciendo uso de un modulo externo
 @Component({
   //moduleId: module.id,
   selector: 'hero-form',
@@ -16,11 +16,13 @@ export class FormsComponent {
 	onSubmit(){
 		this.submitted=true;
 	}
-
-	//remove after:
-	get diagnostic() {
-		return JSON.stringify(this.model);
+	editHero(){
+		this.submitted=false;
 	}
+
+	/*get diagnostic() {
+		return JSON.stringify(this.model);
+	}*/
 	newHero(){
 		this.model=new Hero(4,'','');
 		this.active=false;
