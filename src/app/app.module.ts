@@ -14,6 +14,7 @@ import { AttrDirComponent } from './attr-dir/attr-dir.component';
 import { PeliCompComponent } from './peli-comp/peli-comp.component';
 import {PeliculasService} from './peliculas.service';
 import { InjectComponent } from './inject/inject.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,15 @@ import { InjectComponent } from './inject/inject.component';
     SwitchDirComponent,
     AttrDirComponent,
     PeliCompComponent,
-    InjectComponent
+    InjectComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [PeliculasService]
+  providers: [PeliculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
