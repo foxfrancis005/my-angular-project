@@ -1,5 +1,6 @@
 <div>
-	<h3>Input [property] </h3>
+	<h3>Input [property] (property binding)</h3>
 	<!-- <input type="" name="intext" placeholder="Escribe" value="testttttt"> -->
-	<app-user-item [name]="cadena"></app-user-item>
+	<app-user-item [nombre]="cadena"></app-user-item>
+	<!-- Dentro del template del componente padre se inserta el selector del componente hijo. Dentro de este selector, se encuentra la notación del property binding. Se especifica que la propiedad recipiente [nombre] declarada en el componente hijo (app-user-item) va a ser igual a la propiedad declarada en el componente padre. La propiedad recipiente debe estar preparada para recibir esta propiedad (Observar app-user-item). -->
 </div>

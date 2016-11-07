@@ -1,6 +1,5 @@
-import { Component, OnInit, Injectable } from '@angular/core';
-
-// @Injectable()
+import { Component, OnInit } from '@angular/core';
+//Este componente desmuestra el uso de ngSwitch
 @Component({
   selector: 'app-switch-dir',
   template:
@@ -19,6 +18,7 @@ import { Component, OnInit, Injectable } from '@angular/core';
 
   </div>`
 })
+/*La estructura del ngSwitch es igual a la de cualquier switch*/
 export class SwitchDirComponent implements OnInit {
   value=0;
   constructor() { }

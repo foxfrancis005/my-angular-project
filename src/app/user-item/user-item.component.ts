@@ -6,11 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./user-item.component.css']
 })
 export class UserItemComponent implements OnInit {
-	@Input() name: string; 
-  constructor() {
-  }
+	@Input() nombre: string; 
+	/*El decorador @Input prepara una variable para que sea capaz de recibir
+	datos del exterior (lo inverso a @Output)(Observar el template).*/
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

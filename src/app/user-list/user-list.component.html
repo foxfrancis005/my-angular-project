@@ -4,10 +4,12 @@
 	<li *ngFor="let name of names" (click)="enviarnom(name)">Profr. {{name}}</li>
 </ul>
 
-
+<!-- ngFor muy similar a un foreach de php o javascript. -->
 
 <button class="btn btn-default" (click)="hide()">Ocultar</button>
 
-<div *ngIf="flag">
+<div *ngIf="flag==true">
 	<h2>{{nomb}}</h2>
 </div>
+
+<!-- en ngIf, la etiqueta que lo contenga se incrustara en el template mientras la expresion que contenga sea verdadera; en caso contrario, la etiqueta deja de existir en el template. -->

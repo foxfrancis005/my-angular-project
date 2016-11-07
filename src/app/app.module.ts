@@ -15,6 +15,8 @@ import { PeliCompComponent } from './peli-comp/peli-comp.component';
 import {PeliculasService} from './peliculas.service';
 import { InjectComponent } from './inject/inject.component';
 import { FormsComponent } from './forms/forms.component';
+import {ValidacionService} from './validacion.service';
+import {HeroCollectorService} from './hero-collector.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,7 @@ import { FormsComponent } from './forms/forms.component';
     FormsModule,
     HttpModule
   ],
-  providers: [PeliculasService],
+  providers: [PeliculasService,ValidacionService,HeroCollectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

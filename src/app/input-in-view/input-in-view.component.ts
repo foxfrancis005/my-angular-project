@@ -5,10 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './input-in-view.component.html',
   styleUrls: ['./input-in-view.component.css']
 })
+/*Este componente hace la función de padre. En el se encuentra la propiedad que
+se va a insertar en el componente hijo. (Observar template)*/
 export class InputInViewComponent implements OnInit {
 	cadena:string;
   constructor() {
-  	this.cadena="Vinicio";
+  	this.cadena="Maria Capirinha";
   }
 
   ngOnInit() {
