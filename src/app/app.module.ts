@@ -17,6 +17,7 @@ import { InjectComponent } from './inject/inject.component';
 import { FormsComponent } from './forms/forms.component';
 import {ValidacionService} from './validacion.service';
 import {HeroCollectorService} from './hero-collector.service';
+import { Forms2Component } from './forms2/forms2.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {HeroCollectorService} from './hero-collector.service';
     AttrDirComponent,
     PeliCompComponent,
     InjectComponent,
-    FormsComponent
+    FormsComponent,
+    Forms2Component
   ],
   imports: [
     BrowserModule,
