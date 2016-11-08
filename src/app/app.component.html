@@ -1,7 +1,16 @@
 <h1>
   {{title}}
 </h1>
-
+<div class="col-md-2">
+	<div class="btn-group-vertical" role="group">
+		<button type="button" class="btn btn-default" routerLink="event-binding">Example 1</button>
+		<button type="button" class="btn btn-default" routerLink="directiva-estructural">Example 2</button>
+		<button type="button" class="btn btn-default" routerLink="property-binding">Example 3</button>
+	</div>
+</div>
+<div class="col-md-10">
+	<router-outlet></router-outlet>
+</div>
 <!-- <h2>{{cadena}}</h2> -->
 <!-- <app-hello-world></app-hello-world> -->
 <!-- <app-evt-custom (Myclick)="clickear()"></app-evt-custom> -->
