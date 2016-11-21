@@ -19,6 +19,7 @@ import { FormsComponent } from './forms/forms.component';
 import {ValidacionService} from './validacion.service';
 import {HeroCollectorService} from './hero-collector.service';
 import { Forms2Component } from './forms2/forms2.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { Forms2Component } from './forms2/forms2.component';
     PeliCompComponent,
     InjectComponent,
     FormsComponent,
-    Forms2Component
+    Forms2Component,
+    ObservableComponent
   ],
   imports: [
     routing,

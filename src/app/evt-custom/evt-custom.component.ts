@@ -25,6 +25,7 @@ export class EvtCustomComponent implements OnInit {
 
   emitirevt(){
   	this.Myclick.emit();
+  	alert('Este ejemplo esta incompleto. Vea documentación');
   }
 
 }

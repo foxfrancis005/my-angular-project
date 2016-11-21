@@ -10,6 +10,7 @@ import { PeliCompComponent } from './peli-comp/peli-comp.component';
 import { InjectComponent } from './inject/inject.component';
 import { FormsComponent } from './forms/forms.component';
 import { Forms2Component } from './forms2/forms2.component';
+import { ObservableComponent } from './observable/observable.component';
 
 const routes:Routes=[
 { path: 'event-binding', component: HelloWorldComponent },
@@ -21,7 +22,8 @@ const routes:Routes=[
 { path: 'servicios', component: PeliCompComponent },
 { path: 'dependency-injection', component: InjectComponent },
 { path: 'forms', component: FormsComponent },
-{ path: 'temp-driv-form', component: Forms2Component }
+{ path: 'temp-driv-form', component: Forms2Component },
+{ path: 'observ', component: ObservableComponent }
 ];
 
 export const routing = RouterModule.forRoot(routes);

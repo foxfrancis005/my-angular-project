@@ -1,15 +1,24 @@
 <h1>
   {{title}}
 </h1>
-<div class="col-md-2">
-	<div class="btn-group-vertical" role="group">
-		<button type="button" class="btn btn-default" routerLink="event-binding">Example 1</button>
-		<button type="button" class="btn btn-default" routerLink="directiva-estructural">Example 2</button>
-		<button type="button" class="btn btn-default" routerLink="property-binding">Example 3</button>
+
+<div class="col-md-3">
+	<div class="btn-group-vertical" style="width: 100%;">
+		<button type="button" class="btn btn-default" routerLink="event-binding">Event binding</button>
+		<button type="button" class="btn btn-default" routerLink="directiva-estructural">Directivas estructurales</button>
+		<button type="button" class="btn btn-default" routerLink="property-binding">Property binding</button>
+		<button type="button" class="btn btn-default" routerLink="evt-binding-custom">Event binding custom</button>
+		<button type="button" class="btn btn-default" routerLink="ng-switch">NgSwitch</button>
+		<button type="button" class="btn btn-default" routerLink="directivas-atributo">Directivas atributo</button>
+		<button type="button" class="btn btn-default" routerLink="servicios">Servicios</button>
+		<button type="button" class="btn btn-default" routerLink="dependency-injection">Inyección de dependencias</button>
+		<button type="button" class="btn btn-default" routerLink="forms">Forms</button>
+		<button type="button" class="btn btn-default" routerLink="temp-driv-form">Template driven forms</button>
+		<button type="button" class="btn btn-default" routerLink="observ">Observables</button>		
 	</div>
 </div>
-<div class="col-md-10">
-	<router-outlet></router-outlet>
+<div class="col-md-9">
+		<router-outlet></router-outlet>
 </div>
 <!-- <h2>{{cadena}}</h2> -->
 <!-- <app-hello-world></app-hello-world> -->
