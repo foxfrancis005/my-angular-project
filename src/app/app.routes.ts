@@ -11,9 +11,11 @@ import { InjectComponent } from './inject/inject.component';
 import { FormsComponent } from './forms/forms.component';
 import { Forms2Component } from './forms2/forms2.component';
 import { ObservableComponent } from './observable/observable.component';
+import { MysqlTryComponent} from './mysql-try/mysql-try.component';
+import { AuthGuard } from './_guards/auth.guard';
 
 const routes:Routes=[
-{ path: 'event-binding', component: HelloWorldComponent },
+{ path: '', component: HelloWorldComponent },
 { path: 'directiva-estructural', component: UserListComponent },
 { path: 'property-binding', component: InputInViewComponent },
 { path: 'evt-binding-custom', component: EvtCustomComponent },
@@ -23,7 +25,8 @@ const routes:Routes=[
 { path: 'dependency-injection', component: InjectComponent },
 { path: 'forms', component: FormsComponent },
 { path: 'temp-driv-form', component: Forms2Component },
-{ path: 'observ', component: ObservableComponent }
+{ path: 'observ', component: ObservableComponent },
+{ path: 'mysqltry', component: MysqlTryComponent }
 ];
 
 export const routing = RouterModule.forRoot(routes);

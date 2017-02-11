@@ -1,0 +1,27 @@
+.custom-pagination {
+	text-align: center;
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pagination-previous{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pagination-next{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page-list{
+	text-align: center;
+	width: 30px;
+}
+
+.page-selected{
+	border-bottom: solid 5px #3dffaf;
+}

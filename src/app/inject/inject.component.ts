@@ -24,9 +24,11 @@ export class InjectComponent {
     lista=null;
     btnmsg="Click para obtener heroes";
     constructor(public hcs:HeroCollectorService) {}
+    
     ObtenerHeroes(){
         this.lista=this.hcs.getHeroes();
     }
+
     action(){
         if(this.lista==null){
             this.lista=this.hcs.getHeroes();

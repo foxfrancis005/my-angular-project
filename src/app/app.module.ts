@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routes';
+import { routing } from './app.routes'; 
 
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
@@ -20,6 +20,9 @@ import {ValidacionService} from './validacion.service';
 import {HeroCollectorService} from './hero-collector.service';
 import { Forms2Component } from './forms2/forms2.component';
 import { ObservableComponent } from './observable/observable.component';
+import { MysqlTryComponent } from './mysql-try/mysql-try.component';
+import { Ng2PaginationModule } from 'ng2-pagination';
+import { AuthGuard } from './_guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -35,15 +38,17 @@ import { ObservableComponent } from './observable/observable.component';
     InjectComponent,
     FormsComponent,
     Forms2Component,
-    ObservableComponent
+    ObservableComponent,
+    MysqlTryComponent
   ],
   imports: [
     routing,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Ng2PaginationModule
   ],
-  providers: [PeliculasService,ValidacionService,HeroCollectorService],
+  providers: [PeliculasService,ValidacionService,HeroCollectorService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
