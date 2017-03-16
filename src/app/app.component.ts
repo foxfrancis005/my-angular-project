@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular 2 Ejemplos';
+  title = 'ANGULAR 2 Ejemplos';
   cadena='Cadena declarada en AppComponent';
   clickear(){
   	alert("Se ha accedido a la función clickear() dentro de app-component por medio de un evento custom");
